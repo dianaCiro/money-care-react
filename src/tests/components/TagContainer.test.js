@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import { TagListMock } from "./../mocks/TagListMock";
 
-import TagContainer from "../../components/tagcontainer/TagContainer";
 import axios from "axios";
+import TagContainer from "../../components/tag/tagcontainer/TagContainer";
 
 describe("<TagContainer/>", () => {
   it("should show the list of tags", async () => {

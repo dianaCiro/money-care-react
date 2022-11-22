@@ -1,13 +1,13 @@
 import React from "react";
-import { TagTypeEnum } from "../../enums/TagTypeEnum";
 import DatalistInput from "react-datalist-input";
-import { TagService } from "../../services/TagService";
+import { TagService } from "../../../services/TagService";
 import "./TagEdit.css";
-import "../../css/ReactDatalist.css";
-import ModalInfo from "./../modals/ModalInfo";
-import { ModalTypes } from "./../../actiontypes/ModalTypes";
-import LoadingSpinner from "./../spinner/LoadingSpinner";
-import { useTagCreation } from "../../hooks/useTagCreation";
+import "../../../css/ReactDatalist.css";
+import ModalInfo from "./../../modals/ModalInfo";
+import LoadingSpinner from "./../../spinner/LoadingSpinner";
+import { useTagCreation } from "../../../hooks/useTagCreation";
+import { TagTypeEnum } from "../../../enums/TagTypeEnum";
+import { ModalTypes } from "../../../actiontypes/ModalTypes";
 
 function TagEdit({ tagDispatch }) {
   const [
